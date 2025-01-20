@@ -1,0 +1,98 @@
+
+body {
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url("./images/background-city.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.main * {
+    justify-self: center;
+    margin: 0;
+}
+
+.main .titleArea {
+    margin: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main .titleArea .title {
+    font-size: 10vh;
+    transition: 2s;
+    cursor: default;
+}
+
+.main .titleArea .title:hover {
+    filter: saturate(500%);
+    text-shadow: 0 0 20px white;
+}
+
+
+.main .cont-inter {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 50px;
+
+}
+
+.main .cont-inter .cont-info1 {
+    color: rgb(226, 255, 179);
+    font-size: larger;
+}
+
+.main .cont-inter .cont-info2 {
+    color: rgb(255, 175, 156);
+    font-size: larger;
+}
+
+.main .cont-inter #insertText {
+    width: 50vw;
+    height: 20vh;
+    resize: none;
+    padding: 5px;
+}
+
+.main .cont-inter #insertText::selection {
+    background-color: rgb(255, 208, 0);
+}
+
+.main .cont-inter #getExpression {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.main .cont-inter #viewText {
+    background-color: aliceblue;
+    color: black;
+    padding: 10px;
+    border-radius: 2px;
+    max-width: 50vw;
+    max-height: 15vh;
+    margin-top: 20px;
+    overflow-y: scroll;
+    padding-left: 17px;
+}
+
+.main .cont-inter #viewText::-webkit-scrollbar {
+    border-radius: 2px;
+    width: 7px;
+}
+
+.main .cont-inter #viewText::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 2px;
+}

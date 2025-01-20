@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATLLIN</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="titleArea">
+            <h1 class="title">ATLLIN</h1>
+            <h2>Assistente de Tradução e Localização de Lingua Inglesa</h2>
+        </div>
+        
+        <div class="cont-inter">
+            <p class="cont-info1">Digite um texto de no <b class="cont-info2">maximo 500 caracteres</b></p>
+            <p class="cont-info1">Selecione a expressão presente no texto que deseja traduzir e clique em "Traduzir Expressão"</p>
+            
+            <div class="insertText">
+                <textarea id="insertText" placeholder="Texto para traduzir expressão" maxlength="500" spellcheck="false"></textarea>
+            </div>
+            <div class="getExpression">
+                <button id="getExpression">Traduzir Expressão</button>
+            </div>
+            <div class="viewText">
+                <p id="viewText">"A tradução da expressão aparecerá aqui"</p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
